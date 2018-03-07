@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { AboutComponent } from './about/about.component';
 
+// Aqui pondremos las rutas de los distintos componentes.
 const routes: Routes = [
 { path: 'inicio', component: InicioComponent },
 { path: 'about', component: AboutComponent },
