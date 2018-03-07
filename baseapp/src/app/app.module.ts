@@ -8,7 +8,9 @@ import { CoreModule } from './core/core.module';
 import { InicioModule } from './inicio/inicio.module';
 import { AboutModule } from './about/about.module';
 
+import {FormsModule} from '@angular/forms';
 
+// Decorador de clase
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { AboutModule } from './about/about.module';
     AppRoutingModule,
     CoreModule,
     InicioModule,
-    AboutModule
+    AboutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
