@@ -11,6 +11,7 @@ const routes: Routes = [
 { path: 'comunics', loadChildren: './comunics/comunics.module#ComunicsModule' },
 { path: 'agenda', loadChildren: './agenda/agenda.module#AgendaModule' },
 { path: 'impresora', loadChildren: './impresora/impresora.module#ImpresoraModule' },
+{ path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
 { path: '', pathMatch: 'full', redirectTo: 'inicio' }
 ]; // constante de tipo Routes que es un array de objetos.
 

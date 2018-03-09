@@ -12,7 +12,7 @@ export class FormTdComponent implements OnInit {
   aImpresoras: Array<ImpresoraIf>;
   aDptos: Array<DptoIf>;
   ordenImprimir: OrdenImprimirIf;
-  @ViewChild('formImpresora') formulario: ElementRef;
+  @ViewChild('formImpresora') formulario: any;
   constructor() { }
 
   ngOnInit() {
@@ -34,7 +34,7 @@ export class FormTdComponent implements OnInit {
   }
 
   borrar() {
-    // this.formulario.reset();
+    this.formulario.reset();
   }
 
 }
