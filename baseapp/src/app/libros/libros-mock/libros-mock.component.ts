@@ -18,6 +18,7 @@ export class LibrosMockComponent implements OnInit {
   }
 
   buscar() {
+    this.aLibros = [];
     this.aLibros = this.booksService.getLibros(this.clave);
     this.clave = '';
   }

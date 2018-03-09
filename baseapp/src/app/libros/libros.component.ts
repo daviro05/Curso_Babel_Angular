@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
  <div class='container'>
   <div class='row'>
     <bbl-libros-mock class="col-6"></bbl-libros-mock>
+    <bbl-libros-buscar class="col-6"></bbl-libros-buscar>
+    <bbl-libros-services class="col-6"></bbl-libros-services>
   </div>
 </div>
   `,

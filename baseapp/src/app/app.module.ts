@@ -13,6 +13,8 @@ import {FormsModule} from '@angular/forms';
 import {LOCALE_ID} from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TruncarPipe } from './pipes/truncar.pipe';
 
 registerLocaleData(localeEs);
 
@@ -20,6 +22,7 @@ registerLocaleData(localeEs);
 @NgModule({
   declarations: [
     AppComponent,
+    TruncarPipe,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ registerLocaleData(localeEs);
     CoreModule,
     InicioModule,
     AboutModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [ {provide: LOCALE_ID, useValue: 'es'}],
   bootstrap: [AppComponent]

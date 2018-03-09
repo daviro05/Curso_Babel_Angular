@@ -25,7 +25,11 @@ export class BooksService {
 
       // Generamos asincronia. Con setTimeout que tiene a su vez dos parametros, la primera una arrow y la segunda el tiempo.
       // Pasados 4 segundos quiero que se ejecute mi funcion resolve.
-      setTimeout(() => { resolve(this.aLibros); }, 4000);
+      setTimeout(() => {
+        if ( Math.random() > 0.5) {
+        resolve(this.aLibros);
+         } },
+        4000);
 
      } );
    }
