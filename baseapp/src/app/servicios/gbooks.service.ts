@@ -24,6 +24,7 @@ export class GbooksService {
           this.aLibros.push(
             element.volumeInfo.title);
         });
+        // Este return es el de la función anónima
         return new Promise((resolve, reject) => resolve(this.aLibros));
       },
     );
