@@ -2,8 +2,9 @@
   "posts": [
     { "id": 1, "title": "json-server", "author": "typicode" }
   ],
-  "users": [
-    { "id": 1, "nombre": "Pepe", "apellidos": "Perez" },
-    { "id": 1, "nombre": "David", "apellidos": "Rodriguez" }
+  "contactos": [
+    { "id": 1, "nombre": "Pepe", "apellido": "Perez", "telefono": "649893400", "email": "email1@ucm.es" },
+    { "id": 2, "nombre": "David", "apellido": "Rodriguez", "telefono": "645447800", "email": "email2@ucm.es" },
+    { "id": 3, "nombre": "Manuel", "apellido": "Martin", "telefono": "645423200", "email": "email3@ucm.es" }
   ]
 }
