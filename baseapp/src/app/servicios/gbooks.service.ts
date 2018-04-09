@@ -25,9 +25,27 @@ export class GbooksService {
             element.volumeInfo.title);
         });
         // Este return es el de la función anónima
+        // tslint:disable-next-line:no-shadowed-variable
         return new Promise((resolve, reject) => resolve(this.aLibros));
       },
     );
+  }
+
+  getLibrosRx(clave: string) {
+    this.aLibros = [];
+    const url = this.urlBase + clave;
+
+    return this.http.get(url).pipe(
+      response => this.extractTitles(response)
+    );
+  }
+
+  private extractTitles(response: any) {
+    if (response.items) {
+      return response.items.map(book => book.volumeInfo.title);
+    } else {
+      return response;
+    }
   }
 
 }

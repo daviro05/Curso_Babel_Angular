@@ -1,5 +1,5 @@
-var Rx = require('rxjs/Rx')
-//import * as Rx from 'rxjs/Rx'
+var Rx = require('rxjs/Rx')     // Definicion para Node
+//import * as Rx from 'rxjs/Rx' //Equivalente a ES6
 
 let aDatos = [1,2,3,4,5,6];
 

@@ -22,5 +22,11 @@ export class LibrosServicesComponent implements OnInit {
     .then( (response: any) => this.aLibros = response);
   }
 
+  buscarRx() {
+    this.gbook.getLibrosRx(this.clave).subscribe(
+      (response: any) => this.aLibros = response
+    );
+  }
+
 }
 
